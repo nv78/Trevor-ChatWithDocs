@@ -22,3 +22,11 @@ git pull
 git checkout -b [branch_name]
 
 ```
+
+#### TODOS for today
+
+- multiple documents
+- different types of documents
+- different vector databases (chroma, pinecone)
+- different types of models to query (openAI, llama2)
+- a frontend for user experience

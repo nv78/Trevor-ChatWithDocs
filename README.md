@@ -6,7 +6,7 @@
 - Isaac
 - Ty
 - Myles
-- Natan
+- Natan Vidra
 
 #### How to Use Github
 

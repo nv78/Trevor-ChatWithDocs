@@ -3,7 +3,7 @@
 
 #### Contributors:
 - Jesse
-- Isaac
+- Isaac Atteson
 - Ty
 - Myles
 - Natan Vidra

@@ -3,10 +3,10 @@
 
 #### Contributors:
 - Jesse
-- Isaac
+- Isaac Atteson
 - Ty
 - Myles
-- Natan
+- Natan Vidra
 
 #### How to Use Github
 

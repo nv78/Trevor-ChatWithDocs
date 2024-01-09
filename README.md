@@ -5,7 +5,7 @@
 - Jesse
 - Isaac Atteson
 - Ty Chang
-- Myles
+- Myles Crespin
 - Natan Vidra
 
 #### How to Use Github

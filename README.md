@@ -4,7 +4,7 @@
 #### Contributors:
 - Jesse
 - Isaac Atteson
-- Ty
+- Ty Chang
 - Myles
 - Natan Vidra
 

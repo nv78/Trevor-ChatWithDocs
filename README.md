@@ -19,7 +19,7 @@ git push
 # If you want to get other people's code that they pushed to the repo
 git pull
 # If you want your code to be on a separate branch
-git checkout -b [branch_name***REMOVED***
+git checkout -b [branch_name]
 
 ```
 
@@ -27,6 +27,6 @@ git checkout -b [branch_name***REMOVED***
 
 - multiple documents
 - different types of documents
-- different vector databases (chroma, pinecone***REMOVED***
-- different types of models to query (openAI, llama2***REMOVED***
+- different vector databases (chroma, pinecone)
+- different types of models to query (openAI, llama2)
 - a frontend for user experience

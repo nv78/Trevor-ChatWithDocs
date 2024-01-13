@@ -4,8 +4,8 @@
 #### Contributors:
 - Jesse
 - Isaac Atteson
-- Ty
-- Myles
+- Ty Chang
+- Myles Crespin
 - Natan Vidra
 
 #### How to Use Github

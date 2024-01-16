@@ -10,14 +10,15 @@ from langchain.schema import StrOutputParser
 from langchain.schema.runnable import RunnablePassthrough
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.chroma import Chroma
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+API_KEY = os.getenv("OPENAI_API_KEY")
 loader = PyPDFDirectoryLoader("data/10-Ks copy/")
 
-
-# loader = PDFPlumberLoader("data/10-Ks copy/aapl-10-k.pdf")
 data = loader.load()
 
-API_KEY = ""
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
 splits = text_splitter.split_documents(data)

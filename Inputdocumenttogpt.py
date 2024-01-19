@@ -83,8 +83,8 @@ while True:
     if not question:
         break
   # Use rag_chain's invoke() method
-answer = rag_chain.invoke(question)
-print(answer)
+    answer = rag_chain.invoke(question)
+    print(answer)
 
 # Iterate through each question, invoke the processing chain, and print the results
 #for question in questions:

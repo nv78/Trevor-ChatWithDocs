@@ -6,6 +6,8 @@ import bs4
 from langchain import hub  # Hub for model retrieval
 from langchain_community.chat_models import ChatOpenAI  # Chat model for language generation
 from langchain_openai import OpenAIEmbeddings  # Embeddings for OpenAI models
+from langchain.schema.runnable import RunnablePassthrough
+from langchain.schema import StrOutputParser 
 from langchain.text_splitter import RecursiveCharacterTextSplitter  # Text splitter for document chunking
 from langchain.vectorstores.chroma import Chroma  # Chroma vector store for document vectors
 from dotenv import load_dotenv  # Load environment variables
@@ -62,17 +64,31 @@ rag_chain = (
 )
 
 # Define a list of sample questions for the company's financial data
-questions = [
-    "What are the names of the companies?",
-    "What are the products the companies make?",
-    "What are the net sales of each company?",
-    "What was the average stock price of each company?"
-]
+#questions = [
+    #"What is the name of the company?",
+    #"What are the products the company makes?",
+    #"What are the net sales?",
+    #"What was the average stock price?"
+#]
 
+# Print a prompt to ask the user for a question and exit instructions
+print("Ask a question (press enter to exit):")
+
+# Continue asking for user input until an empty question is entered
+while True:
+    # Prompt the user for a question
+    question = input("Question: ")
+
+    # If the entered question is empty, exit the loop
+    if not question:
+        break
+  # Use rag_chain's invoke() method
+answer = rag_chain.invoke(question)
+print(answer)
 
 # Iterate through each question, invoke the processing chain, and print the results
-for question in questions:
-    print(rag_chain.invoke(question))
+#for question in questions:
+    #print(rag_chain.invoke(question))
 
 # Delete the vector store collection after processing
 vectorstore.delete_collection()

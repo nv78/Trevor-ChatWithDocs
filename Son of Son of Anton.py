@@ -4,7 +4,7 @@ from langchain_community.document_loaders import PDFPlumberLoader
 # from langchain.document_loaders import PDFPlumberLoader
 import bs4
 from langchain import hub
-from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 from langchain.schema import StrOutputParser
 from langchain.schema.runnable import RunnablePassthrough
@@ -41,10 +41,10 @@ rag_chain = (
 )
 
 questions = [
-    "What is the name of the company?",
-    "What are the products the company makes?",
-    "What are the net sales?",
-    "What was the average stock price?"
+    "What are the names of the companies?",
+    "What are the products the companies make?",
+    "What are the net sales of each company?",
+    "What was the average stock price of each company?"
 ]
 
 for question in questions:
